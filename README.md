@@ -183,3 +183,8 @@ Even with **Multiprocess**, it can still take a long time to load the files. Run
 The file_deleter is used to delete the file after it has been used. Run this file after you have started running the other two files in order to save computer space. Adjust the **time.sleep(#)** value as appropriate to your computing speed and network speed. 
 
 If you run multiple copies of the **MULTI_DRIVER.ipynb**, make sure to also create another copy of the **file_deleter.ipynb** as well. 
+
+
+ข้อมูล NCEP สภาพอากาศกรุงเทพ 2020-2024 สี่จุดใกล้เครื่องตรวจวัดคุณภาพอากาศของกรมอุตุฯ โดยเลือกจุดที่ดึงข้อมูลด้วย Nearest Neighbour Algorithm ของ pixel A,B,C,D โดยสามารถดูข้อมูล latitude longitude ได้ใน file data dictionary โดยหากต้องการดูข้อมูลสภาพอากาศ ณ สถานี สามารถรวม file Station_name กับ NCEPDATA_2020-2022 โดยอิง column pixelID ได้
+
+ข้อระมัดระวัง: 1. มีข้อมูลว่างปล่าวบางชั่วโมงเนื่องจากตัว NCEP Model ณ ชั่วโมงนั้นมีปัญหา หรือไม่มี file ข้อมูล 2. ไม่มีชื่อตัวแปล PBLH (Planetary Boundary Layer Boundary) ตอนดึงข้อมูล จึงดึงตัวแปล 'unknown' เนื่องจากเป็นค่าที่เชื่อว่าคือตัว PBLH ซึ่งตัวแปลนี้มีข้อมูลตั้งแต่ 2020-01-01 เวลา 0:00 ถึงปี 2021-03-22 เวลา 6:00 หลังวันนั้นมีค่า 0.0 ตลอด 
