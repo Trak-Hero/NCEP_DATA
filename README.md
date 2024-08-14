@@ -184,6 +184,7 @@ The file_deleter is used to delete the file after it has been used. Run this fil
 
 If you run multiple copies of the **MULTI_DRIVER.ipynb**, make sure to also create another copy of the **file_deleter.ipynb** as well. 
 
+# Notice
 
 ข้อมูล NCEP สภาพอากาศกรุงเทพ 2020-2024 สี่จุดใกล้เครื่องตรวจวัดคุณภาพอากาศของกรมอุตุฯ โดยเลือกจุดที่ดึงข้อมูลด้วย Nearest Neighbour Algorithm ของ pixel A,B,C,D โดยสามารถดูข้อมูล latitude longitude ได้ใน file data dictionary โดยหากต้องการดูข้อมูลสภาพอากาศ ณ สถานี สามารถรวม file Station_name กับ NCEPDATA_2020-2022 โดยอิง column pixelID ได้
 
